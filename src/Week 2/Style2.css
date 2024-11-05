@@ -1,0 +1,14 @@
+.blue{
+    background-color:rgb(94, 120, 120)
+}
+.header {
+    margin: auto;
+    width: 50%;
+    border: 3px
+}
+.faketabs{
+    display: flex
+}
+.tab:hover {
+   background-color: rgb(66, 66, 66);
+}
