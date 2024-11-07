@@ -1,11 +1,12 @@
-.blue{
-    background-color:rgb(94, 120, 120)
+.body{
+    background:rgb(94, 120, 120)
 }
 .header {
     margin: auto;
     width: 50%;
     border: 3px;
     justify-content: center;
+    font-size: x-large;
     
 }
 .faketabs{
