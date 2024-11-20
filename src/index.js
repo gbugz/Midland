@@ -48,7 +48,7 @@ if (TestGrade <= ElementaryGrades) {
 // Log the number and "Fizz" if the number is divisible by 3
 // Log the number and "Buzz" if the number is divisible by 5
 // Log the number if none of the above conditions are true
-for (let i =1; i<= 100; i++) {
+for (let i = 1; i <= 100; i++) {
     console.log(`${i} ${i%3 === 0 && i%5 ===5}`)
 }
 //TODO: return to this later, review the fizz buzz conditionals and gates
