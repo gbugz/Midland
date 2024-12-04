@@ -23,7 +23,15 @@
         { name: "Richard", score: 10 },
         { name: "William", score: 67 },
       ];
-      students.sort(()  )
+      students.sort((a,b) =>  b.score - a.score)
+      console.log(students)
+      //Above is Tanner's solution, below is the solution we came up with together
+      students.sort((a,b) =>  b.score - a.score)
+      console.log(students)
+      //Wow, how similar. Script below also functions, because it defines sortedArrayReference
+      //as the script that sorts the scores
+      const sortedArrayReference = students.sort((a,b) =>  b.score - a.score)
+      console.log(sortedArrayReference)
 
       // -----------------------------------------------------------------
       //! Create three arrays and add all numbers from 1-100 to
@@ -32,6 +40,16 @@
       //!   - Array Two should have all numbers between 16 and 25 (inclusive)
       //!   - Array Three should have all numbers divisible by 4 AND 3
 
+      const arrayOne = new Array(100).fill('').map((value, index) => index + 1)
+
+      const outOdds = (value) => value % 2 === 0
+
+      console.log('numbers', numbers)
+      console.log('evens', numbers.filter(outOdds))
+      console.log(numbers.slice(15,25))
+      //! Do the last one on your own!
+
+      
       // -----------------------------------------------------------------
       //! Create an array with all numbers from 1-10.
       //! Copy the array and then, using a prototypical function,
