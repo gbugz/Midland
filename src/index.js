@@ -10,6 +10,7 @@
 const LegalDrivingAge = 16;
 let TestAge = 14;
 
+
 if (TestAge >= LegalDrivingAge) {
     console.log ('Welcome to driving!')
 } else {
@@ -85,6 +86,21 @@ for (let i = 1; i <= 100; i++) {
 //! leave the counter at 0 and log: "It took 0 retries to get heads!".
 //! If the coin was tails, try again and keep doing so until heads happens. Log the amount of retries it took.
 
+const coinFlip = () => {
+    let count = 0;
+    let coinFace;
+    let keepGoing = true;
+    while(keepGoing) {
+      coinFace = Math.floor(Math.random() * 2) === 0 ? 'heads' : 'tails';
+      keepGoing = coinFace !== 'heads'
+      if (!keepGoing) {
+        alert(`It took ${count} retries to get heads!`);
+      } else {
+        count++;
+      }
+    }
+  }
+
 // COMPARISON PRACTICE
 // -----------------------------------------------------------------
 //! Build a simple site that prompts a user for their first name and then a number
@@ -94,4 +110,3 @@ for (let i = 1; i <= 100; i++) {
 //!  - Log every number before theirs and every number from 100 counting down to theirs in two separate loops.
 //!  - If their name is your name send an alert saying that it is a great name
 //!  - Log their name in reverse to the console.
-
