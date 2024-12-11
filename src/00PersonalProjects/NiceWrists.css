@@ -1,2 +1,16 @@
 /*This will style everything. I refuse to keep putting CSS in my HTML
-/*I have enough clutter in the real world, there's no reason to bring it here
+I have enough clutter in the real world, there's no reason to bring it here
+*/
+
+html, Body {
+    height: 100%;
+    background: #BE6E46;
+    font-family: Rockwell;
+}
+header{
+    display: flex;
+    Justify-content:center;
+    align-items: center;
+    font-size: 40px;
+
+}
