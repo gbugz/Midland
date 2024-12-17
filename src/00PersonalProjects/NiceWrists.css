@@ -4,7 +4,7 @@ I have enough clutter in the real world, there's no reason to bring it here
 
 html, Body {
     height: 100%;
-    background: #BE6E46;
+    background: #be6e46;
     font-family: Rockwell;
 }
 header{
@@ -13,4 +13,71 @@ header{
     align-items: center;
     font-size: 40px;
 
+}
+.headArt{
+    display:flex;
+    Justify-content:center;
+    align-items: collumn;
+}
+.announcement {
+    height: 50px;	
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    background: rgb(0, 0, 0);
+    color: rgb(228, 224, 216);
+    border: 1px solid orange;
+}
+p.scroll {
+    position: absolute;
+    white-space:nowrap;
+    width: max-content;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    animation: scroll-left 20s linear infinite;
+}
+@keyframes scroll-left {
+    0% {
+        transform:translateX(100%)
+    }
+    100% {
+        transform:translateX(-100%)
+    };
+    
+}
+
+.headimg {
+    size: 3px;
+
+}
+.headimgTwo {
+    transform: scaleX(-1)
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    background-color: #00000000;
+    font-size: 30px;
+}
+li:hover {
+    background-color:#e1875e;
+
+}
+.Superdiv{
+    display:flex;
+    Justify-content:center;
+    align-items: center;
+
+}
+#Begin {
+    display: block;
+    margin:20px auto;
+    padding: 5px 30px;
 }
