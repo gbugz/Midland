@@ -1,0 +1,49 @@
+html, Body {
+    height: 100%;
+    background: #0e0034;
+    font-family: Rockwell;
+}
+header{
+    display: flex;
+    Justify-content:center;
+    align-items: center;
+    font-size: 40px;
+
+}
+.headArt{
+    display:flex;
+    Justify-content:center;
+    align-items: collumn;
+}
+.titleText{
+    color:aliceblue;    
+}
+.announcement {
+    height: 50px;	
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    background: rgb(0, 0, 0);
+    color: rgb(228, 224, 216);
+    border: 1px solid orange;
+}
+p.scroll {
+    position: absolute;
+    white-space:nowrap;
+    width: max-content;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    animation: scroll-left 20s linear infinite;
+}
+@keyframes scroll-left {
+    0% {
+        transform:translateX(100%)
+    }
+    100% {
+        transform:translateX(-100%)
+    };
+    
+}
+
